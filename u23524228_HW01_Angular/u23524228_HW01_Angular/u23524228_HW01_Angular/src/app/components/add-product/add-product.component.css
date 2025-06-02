@@ -1,0 +1,86 @@
+.add-product-container {
+    max-width: 600px;
+    margin: 50px auto; /* Center the box horizontally and add vertical spacing */
+    padding: 20px;
+    background-color: #e3f2fd; /* Light blue shade */
+    border: 1px solid #90caf9; /* Slightly darker blue for the border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-input, .form-textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #28a745; /* Green color for submit button */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+.btn-primary:disabled {
+    background-color: #d6d6d6; /* Grey color for disabled state */
+    color: #a1a1a1;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background-color: #dc3545; /* Red color for cancel button */
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #c82333;
+}

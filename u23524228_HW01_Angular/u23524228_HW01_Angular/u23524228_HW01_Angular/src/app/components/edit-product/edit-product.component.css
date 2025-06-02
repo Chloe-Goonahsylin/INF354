@@ -1,0 +1,82 @@
+.edit-product-container {
+    max-width: 600px;
+    margin: 50px auto; /* Center the box horizontally and add vertical spacing */
+    padding: 20px;
+    background-color: #e3f2fd; /* Light blue shade */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center all content inside the box */
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; /* Center form elements horizontally */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure inputs span the full width */
+    max-width: 400px; /* Limit the width of inputs */
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: left; /* Align labels to the left */
+}
+
+.form-input,
+.form-textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #28a745; /* Green color for submit button */
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+}
+
+.btn-secondary {
+    background-color: #dc3545; /* Red color for cancel button */
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #c82333;
+}

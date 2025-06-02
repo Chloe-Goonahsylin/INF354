@@ -1,0 +1,38 @@
+nav {
+  background-color: #073c71; /* Dark gray background */
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav a {
+  color: #F8F9FA; /* Light gray text */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFC107; /* Yellow on hover */
+}
+
+nav div ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem; /* Increased gap for better spacing */
+}
+
+nav div ul li {
+  display: inline;
+}
+
+nav .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #FFC107; /* Highlighted brand color */
+}

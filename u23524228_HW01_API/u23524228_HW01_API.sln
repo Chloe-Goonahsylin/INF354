@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "u23524228_HW01_API", "u23524228_HW01_API\u23524228_HW01_API.csproj", "{EC489C30-BE9F-4CD7-A1E2-44C75AEC86E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "u23524228_HW01_API.tests", "u23524228_HW01_API.tests\u23524228_HW01_API.tests.csproj", "{ABF83E18-F0EB-401A-AF0E-488E8657085C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC489C30-BE9F-4CD7-A1E2-44C75AEC86E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC489C30-BE9F-4CD7-A1E2-44C75AEC86E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC489C30-BE9F-4CD7-A1E2-44C75AEC86E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC489C30-BE9F-4CD7-A1E2-44C75AEC86E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF83E18-F0EB-401A-AF0E-488E8657085C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF83E18-F0EB-401A-AF0E-488E8657085C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF83E18-F0EB-401A-AF0E-488E8657085C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF83E18-F0EB-401A-AF0E-488E8657085C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {080A031B-4E2E-4ACF-8D7A-F03C28546DFA}
+	EndGlobalSection
+EndGlobal

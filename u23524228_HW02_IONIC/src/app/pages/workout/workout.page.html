@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Workouts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- List view -->
+  <ion-list *ngIf="!selectedWorkout">
+    <ion-item *ngFor="let workout of workouts" (click)="viewDetails(workout)">
+      <ion-label>
+        <h2>{{ workout.name }}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- Details view -->
+  <ion-card *ngIf="selectedWorkout">
+    <ion-card-header>
+      <ion-card-title>{{ selectedWorkout.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Description:</strong> {{ selectedWorkout.description }}</p>
+      <p><strong>Exercises:</strong> {{ selectedWorkout.exercises.join(', ') }}</p>
+      <p><strong>Duration:</strong> {{ selectedWorkout.duration }}</p>
+    </ion-card-content>
+    <ion-button
+      expand="block"
+      color="success"
+      [disabled]="isWorkoutCompleted()"
+      (click)="markAsCompleted()"
+    >
+      Mark as Completed
+    </ion-button>
+    <ion-button expand="block" color="primary" (click)="goBack()">Back to Workouts</ion-button>
+  </ion-card>
+</ion-content>

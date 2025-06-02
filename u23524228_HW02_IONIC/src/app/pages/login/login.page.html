@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ isSignUpMode ? 'Sign Up' : 'Login' }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login-content">
+  <div class="form-container">
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [(ngModel)]="email" type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input [(ngModel)]="password" type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <div *ngIf="errorMessage" class="error-message">
+      <p>{{ errorMessage }}</p>
+    </div>
+
+    <ion-button expand="block" (click)="onSubmit()">
+      {{ isSignUpMode ? 'Sign Up' : 'Login' }}
+    </ion-button>
+
+    <ion-button expand="block" fill="clear" (click)="toggleMode()">
+      Switch to {{ isSignUpMode ? 'Login' : 'Sign Up' }}
+    </ion-button>
+  </div>
+</ion-content>

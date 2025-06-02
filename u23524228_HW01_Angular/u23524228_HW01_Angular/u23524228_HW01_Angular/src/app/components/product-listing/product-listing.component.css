@@ -1,0 +1,77 @@
+.product-list-container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards horizontally */
+    align-items: center; /* Optional: Align cards vertically if needed */
+}
+
+.product-card {
+    border: 1px solid #007BFF; /* Blue border */
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #E3F2FD; /* Light blue background */
+    color: #0D47A1; /* Dark blue text */
+    font-family: 'Arial', sans-serif; /* Better font */
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Center content horizontally */
+}
+
+.product-card h5 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin: 4px 0;
+}
+
+.product-card button {
+    background-color: #0D47A1; /* Dark blue button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin: 8px; /* Add spacing between buttons */
+    width: 100px; /* Set consistent button width */
+    text-align: center;
+}
+
+.product-card button:hover {
+    background-color: #0056b3; /* Slightly lighter blue on hover */
+}
+
+.product-card button:first-of-type {
+    background-color: #28a745; /* Green for Edit button */
+    margin-right: 16px; /* Add extra spacing between the Edit and Delete buttons */
+}
+
+.product-card button:first-of-type:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.product-card button:last-of-type {
+    background-color: #dc3545; /* Red for Delete button */
+}
+
+.product-card button:last-of-type:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.product-list-title {
+    text-align: center; /* Center align the text */
+    font-size: 2rem; /* Increase font size */
+    color: #0D47A1; /* Dark blue color */
+    font-family: 'Arial', sans-serif; /* Match font with cards */
+    margin-bottom: 24px; /* Add spacing below the title */
+}

@@ -1,0 +1,37 @@
+.chart-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+  background: #fff8f0;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(255, 140, 0, 0.08);
+}
+
+.chart-item {
+  flex: 1;
+  margin: 0;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(255, 140, 0, 0.10);
+  padding: 1.5rem 1rem;
+  border-top: 4px solid #ffb347;
+  transition: box-shadow 0.2s;
+}
+
+.chart-item:hover {
+  box-shadow: 0 6px 24px rgba(255, 140, 0, 0.18);
+  border-top: 4px solid #ff8800;
+}
+
+@media (max-width: 900px) {
+  .chart-container {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem 0.2rem;
+  }
+  .chart-item {
+    padding: 1rem 0.5rem;
+  }
+}

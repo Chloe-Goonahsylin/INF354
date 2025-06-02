@@ -1,0 +1,41 @@
+nav, .navbar, .app-navbar, header {
+  background: linear-gradient(90deg, #ff8800 0%, #ffb347 100%);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(255, 140, 0, 0.10);
+  padding: 1.2rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.side-container {
+  min-width: 200px;
+  background: #fff3e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 140, 0, 0.08);
+  padding: 1.2rem 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.content-container {
+  padding: 24px 18px;
+  background: #fff8f0;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(255, 140, 0, 0.06);
+  margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+  nav, .navbar, .app-navbar, header {
+    font-size: 1.1rem;
+    padding: 0.7rem 0.5rem;
+    border-radius: 0 0 12px 12px;
+  }
+  .side-container, .content-container {
+    border-radius: 8px;
+    padding: 0.7rem 0.4rem;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,37 @@
+<div class="login-container">
+  <div class="login-table">
+    <h2 style="text-align:center; margin-bottom: 1.5rem;">Log in</h2>
+    <form [formGroup]="loginFormGroup">
+      <table style="width:100%;">
+        <tr>
+          <td>
+            <label for="emailaddress">Username</label>
+          </td>
+          <td>
+            <input type="text" id="emailaddress" placeholder="Enter the User's Email address" formControlName="emailaddress" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Password</label>
+          </td>
+          <td>
+            <input type="password" id="password" placeholder="Enter the User's Password" formControlName="password" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="button" (click)="LoginUser()">Log in</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align:center;">
+            <div style="margin-top: 1rem;">
+              Don't have an account? Register <a [routerLink]="['../register']">here</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>

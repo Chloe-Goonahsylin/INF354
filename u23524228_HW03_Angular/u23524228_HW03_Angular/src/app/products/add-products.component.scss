@@ -1,0 +1,116 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: #ffb347; // Solid orange background
+}
+
+.addProduct-container {
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  overflow: auto;
+}
+
+.addProduct-form {
+  background: #fff;
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  min-width: 400px;
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  z-index: 1;
+}
+
+.addProduct-form label {
+  font-weight: 600;
+  color: #ff8800;
+  margin-bottom: 0.3rem;
+}
+
+.addProduct-form input[type="text"],
+.addProduct-form input[type="number"],
+.addProduct-form input[type="file"],
+.addProduct-form select,
+.addProduct-form textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ffb347;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s;
+  font-size: 1rem;
+  background: #fff8f0;
+}
+
+.addProduct-form input[type="text"]:focus,
+.addProduct-form input[type="number"]:focus,
+.addProduct-form input[type="file"]:focus,
+.addProduct-form select:focus,
+.addProduct-form textarea:focus {
+  border-color: #ff8800;
+}
+
+.addProduct-form button {
+  display: block;
+  margin: 1.2rem auto 0 auto;
+  padding: 0.75rem 2.5rem;
+  background: #ffb347;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(255, 140, 0, 0.10);
+}
+
+.addProduct-form button:hover {
+  background: #ff8800;
+  box-shadow: 0 4px 16px rgba(255, 140, 0, 0.14);
+}
+
+.addProduct-form .form-title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff8800;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.side-container {
+  min-width: 200px;
+  height: 100vh;
+  background: #fff3e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 140, 0, 0.08);
+  padding: 1.2rem 0.8rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .addProduct-form {
+    min-width: 0;
+    max-width: 95vw;
+    padding: 1.5rem 0.5rem;
+  }
+}
+

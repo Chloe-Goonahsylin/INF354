@@ -1,0 +1,78 @@
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0.5em;
+    background: #fff8f0;
+    box-shadow: 0 4px 24px rgba(255, 140, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th {
+    background: #ffb347;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1em;
+    border: none;
+    padding: 18px 15px !important;
+    text-align: left;
+}
+
+td {
+    padding: 15px !important;
+    border-bottom: 1px solid #ffe0b2;
+    font-size: 1em;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+
+.mat-row:nth-of-type(odd) {
+    background-color: #fff3e0;
+}
+
+.mat-row:nth-of-type(even) {
+    background-color: #fff8f0;
+}
+
+img {
+    max-width: 10em;
+    max-height: 10em;
+    margin: 0.75em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(255, 140, 0, 0.10);
+    border: 2px solid #ffb347;
+}
+
+button, .mat-raised-button, .mat-flat-button {
+    background: #ffb347;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6em 1.5em;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(255, 140, 0, 0.08);
+}
+
+button:hover, .mat-raised-button:hover, .mat-flat-button:hover {
+    background: #ff8800;
+}
+
+@media (max-width: 800px) {
+    table, th, td {
+        font-size: 0.95em;
+    }
+    img {
+        max-width: 7em;
+        max-height: 7em;
+    }
+}

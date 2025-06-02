@@ -1,0 +1,30 @@
+<div class="login-container">
+  <div class="login-table">
+    <h2 style="text-align:center; margin-bottom: 1.5rem;">Register</h2>
+    <form [formGroup]="registerFormGroup">
+      <table style="width:100%;">
+        <tr>
+          <td>
+            <label for="emailaddress">Email Address</label>
+          </td>
+          <td>
+            <input type="text" id="emailaddress" placeholder="Enter a valid Email address" formControlName="emailaddress" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Password</label>
+          </td>
+          <td>
+            <input type="password" id="password" placeholder="Enter between 6 to 16 characters" formControlName="password" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="button" (click)="RegisterUser()">Register</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
